@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Revalia&display=swap");
+
+$background-green: #67a076;
+$dark-green: #3a5d41;
+$highlight-yellow: #ffc561;
+$off-white: #f9f9f9;
+$off-black: rgb(21, 21, 21);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  // font-weight: normal;
+  font-family: "Halant", serif;
+  color: $off-white;
+}
+
+body {
+  background: $background-green;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

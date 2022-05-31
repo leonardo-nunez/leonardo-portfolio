@@ -1,0 +1,66 @@
+.skills {
+  width: 100vw;
+  height: 140vh;
+  position: relative;
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    margin-left: 5rem;
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 6rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 30vw;
+    background: $off-white;
+    opacity: 0.8;
+    border: 12px solid $dark-green;
+    border-radius: 18px;
+    padding: 1rem;
+    h3 {
+      color: black;
+      font-size: 1.5rem;
+    }
+    p {
+      color: black;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__vertical-dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 135vh;
+    width: 49.45vw;
+    top: -15rem;
+    margin-top: 15rem;
+    left: 0;
+    border-right: 15px dotted $off-white;
+    z-index: 10;
+  }
+  &__birds {
+    position: absolute;
+    height: 90vh;
+    top: 0;
+    margin-top: 15rem;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}

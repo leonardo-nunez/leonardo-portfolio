@@ -1,0 +1,80 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3a5d41;
+    opacity: 0.9;
+    border: 12px solid $off-white;
+    border-radius: 18px;
+    width: 70vw;
+    padding: 1rem;
+  }
+
+  &__vertical-dots {
+    border-left: 15px dotted $off-white;
+    height: 25vh;
+    margin-top: 1rem;
+  }
+
+  &__bird {
+    position: absolute;
+    opacity: 0.6;
+    width: 700px;
+    height: 700px;
+    object-fit: none;
+    object-position: 83% 0;
+    z-index: -1;
+    left: -4vw;
+  }
+
+  &__fern {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    transform: rotate(-7.56deg);
+    right: -3vw;
+  }
+
+  &__title {
+    color: $highlight-yellow;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__text {
+    font-size: 30px;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  &__images {
+    border: 8px solid $off-white;
+    border-radius: 18px;
+    margin: 0.5rem;
+    &--cats {
+      width: 30%;
+      margin-left: 5rem;
+    }
+    &--circus {
+      width: 50%;
+      margin-left: 12rem;
+    }
+  }
+}
