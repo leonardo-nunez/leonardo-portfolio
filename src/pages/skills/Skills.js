@@ -6,8 +6,7 @@ const Skills = () => {
   return (
     <>
       <section className="skills">
-        <div className="skills__vertical-dots" />
-        <div className="skills__content-wrapper">
+        <div className="skills__header-wrapper">
           <article className="skills__header">
             <h1>
               Technical
@@ -15,58 +14,28 @@ const Skills = () => {
               skills
             </h1>
           </article>
-          <article className="skills__content">
-            <div className="column">
-              <h3>General</h3>
-              <p>
-                JavaScript
-                <br />
-                Typescript
-              </p>
-              <h3>Backend </h3>
-              <p>
-                NodeJS
-                <br />
-                ExpressJS
-                <br />
-                REST
-              </p>{' '}
-              <h3>Frontend</h3>
-              <p>
-                React
-                <br />
-                Angular
-                <br />
-                Redux
-                <br />
-                HTML
-                <br />
-                CSS
-                <br />
-                Figma
-                <br />
-                UX
-              </p>
-            </div>
-            <div className="column">
-              <h3>Tools and technologies</h3>
-              <p>
-                Visual Studio Code
-                <br /> Mocha/Jest
-                <br />
-                Git+GitHub
-                <br /> Cloud Platforms
-                <br />
-                (MongoDB Atlas, Netlify,
-                <br />
-                Heroku, Contentful)
-                <br />
-                Asana
-                <br />
-                TDD
-                <br /> Agile work methods
-              </p>
-            </div>
+        </div>
+        <div className="skills__vertical-dots" />
+        <div className="skills__box-wrapper">
+          <article className="skills__box">
+            <h3>General</h3>
+            <p>JavaScript, Typescript</p>
+          </article>
+          <article className="skills__box">
+            <h3>Backend </h3>
+            <p>NodeJS, ExpressJS, REST</p>
+          </article>
+          <article className="skills__box">
+            <h3>Frontend</h3>
+            <p>React, Angular, Redux, HTML, CSS, Figma, UX</p>
+          </article>
+          <article className="skills__box">
+            <h3>Tools and technologies</h3>
+            <p>
+              Visual Studio Code, Mocha/Jest, Git+GitHub, Cloud Platforms
+              (MongoDB Atlas, Netlify, Heroku, Contentful) Asana, TDD, Agile
+              work methods
+            </p>
           </article>
         </div>
         <img
