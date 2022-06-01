@@ -23,8 +23,8 @@ const Intro = () => {
           <h3>a full-stack web developer</h3>
         </article>
         <img className="intro__image" src={leoPortrait} alt="leo-portrait" />
-        <div className="vertical-dots" />
       </section>
+      <div className="vertical-dots" />
     </>
   );
 };

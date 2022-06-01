@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+// import CodeIcon from '@mui/icons-material/Code';
 
 const Projects = () => {
   const styles = {
@@ -35,14 +36,15 @@ const Projects = () => {
         contentArrowStyle={{ borderRight: '15px solid  #3a5d41' }}
         date="2011 - present"
         iconStyle={styles.icon}
-        icon={'< >'}
+        icon={'<CodeIcon />'}
       >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h3 className="vertical-timeline-element-title">CIN CIN</h3>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          Cocktail recipe app
+          <br />
+          24 hour project @&lt;/SALT&gt;
         </p>
+        <button className="project-button--1">Github</button>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work-2"
