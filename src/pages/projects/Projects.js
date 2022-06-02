@@ -4,12 +4,22 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-// import CodeIcon from '@mui/icons-material/Code';
+import Button from 'react-bootstrap/Button';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import PetsIcon from '@mui/icons-material/Pets';
+
+import cincin from './images/cincin.jpg';
+import musically from './images/musically.jpg';
+import portfolio from './images/portfolio.jpg';
+import puppies from './images/puppies.jpg';
 
 const Projects = () => {
   const styles = {
     icon: {
-      border: '4px solid #f9f9f9',
+      border: '3px solid #f9f9f9',
       background: '#ffc561',
       color: '#f9f9f9',
     },
@@ -18,114 +28,163 @@ const Projects = () => {
       border: '8px solid #f9f9f9',
       borderRadius: '16px',
       boxShadow: 'none',
-      color: '#000',
+      opacity: '0.8',
     },
     element2: {
-      background: '#f9f9f9',
+      background: '#e9edca',
       border: '8px solid #3a5d41',
       borderRadius: '16px',
       boxShadow: 'none',
-      color: '#3a5d41',
+      opacity: '0.8',
     },
   };
   return (
-    <VerticalTimeline lineColor={''}>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={styles.element1}
-        contentArrowStyle={{ borderRight: '15px solid  #3a5d41' }}
-        date="2011 - present"
-        iconStyle={styles.icon}
-        icon={'<CodeIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">CIN CIN</h3>
-        <p>
-          Cocktail recipe app
-          <br />
-          24 hour project @&lt;/SALT&gt;
-        </p>
-        <button className="project-button--1">Github</button>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work-2"
-        date="2010 - 2011"
-        contentStyle={styles.element2}
-        contentArrowStyle={{ borderRight: '7px solid  #3a5d41' }}
-        iconStyle={{ background: '#ffc561', color: '#f9f9f9' }}
-        icon={'<WorkIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2008 - 2010"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={'<WorkIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={'<WorkIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="April 2013"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={'<SchoolIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Content Marketing for Web, Mobile and Social Media
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>Strategy, Social Media</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="November 2012"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={'<SchoolIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Agile Development Scrum Master
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>Creative Direction, User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={'<SchoolIcon />'}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-        icon={'<StarIcon />'}
-      />
-    </VerticalTimeline>
+    <section className="projects">
+      <div className="projects__title-box">
+        <h2 className="projects__title">Projects</h2>
+      </div>
+      <VerticalTimeline lineColor={''}>
+        <VerticalTimelineElement
+          className="project project__dark"
+          contentStyle={styles.element1}
+          contentArrowStyle={{ borderRight: '8px solid  #3a5d41' }}
+          iconStyle={styles.icon}
+          icon={<LocalBarIcon />}
+        >
+          <div className="project__wrapper">
+            <div className="project__text">
+              <h3 className="project__title">CIN CIN</h3>
+              <p>
+                Cocktail recipe app
+                <br />
+                24 hour project @&lt;/SALT&gt;
+              </p>
+              <a
+                href="https://github.com/leonardo-nunez/cin-cin"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button className="project__button" variant="success">
+                  {<GitHubIcon />} GitHub
+                </Button>
+              </a>
+            </div>
+            <img
+              className="project__img project__img--1"
+              src={cincin}
+              alt="proj1Image"
+            />
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="project project__light"
+          contentStyle={styles.element2}
+          iconStyle={styles.icon}
+          icon={<MusicNoteIcon />}
+        >
+          <div className="project__wrapper">
+            <div className="project__text">
+              <h3 className="project__title">Musically</h3>
+              <p>
+                Music Quiz app
+                <br />
+                Final project @&lt;/SALT&gt;
+              </p>
+              <a
+                href="https://github.com/martalewan/Music-quiz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  className="project__button project__button-light"
+                  variant="success"
+                >
+                  {<GitHubIcon />} GitHub
+                </Button>
+              </a>
+              <a
+                href="https://quiz-the-survivors.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  className="project__button project__button-light"
+                  variant="success"
+                >
+                  {<LaptopIcon />} Demo
+                </Button>
+              </a>
+            </div>
+            <img
+              className="project__img project__img-light"
+              src={musically}
+              alt="proj1Image"
+            />
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="project project__dark"
+          contentStyle={styles.element1}
+          contentArrowStyle={{ borderRight: '8px solid  #3a5d41' }}
+          iconStyle={styles.icon}
+          icon={<LaptopIcon />}
+        >
+          <div className="project__wrapper">
+            <div className="project__text">
+              <h3 className="project__title">Portfolio</h3>
+              <p>Portfolio page made with React</p>
+              <a
+                href="https://github.com/leonardo-nunez/leonardo-portfolio"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button className="project__button" variant="success">
+                  {<GitHubIcon />} GitHub
+                </Button>
+              </a>
+            </div>
+            <img
+              className="project__img project__img--1"
+              src={portfolio}
+              alt="proj1Image"
+            />
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="project project__light"
+          contentStyle={styles.element2}
+          iconStyle={styles.icon}
+          icon={<PetsIcon />}
+        >
+          <div className="project__wrapper">
+            <div className="project__text">
+              <h3 className="project__title">Puppies</h3>
+              <p>
+                A fullstack application with server and client displaying puppy
+                information built with typescript
+              </p>
+              <a
+                href="https://github.com/davlet61/puppies-fullstack-app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  className="project__button project__button-light"
+                  variant="success"
+                >
+                  {<GitHubIcon />} GitHub
+                </Button>
+              </a>
+            </div>
+            <img
+              className="project__img project__img-light"
+              src={puppies}
+              alt="proj1Image"
+            />
+          </div>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+    </section>
   );
 };
 

@@ -1,9 +1,72 @@
-.vertical-timeline-element--work-2 {
-  & p {
-    color: black;
+.projects {
+  position: relative;
+  width: 100vw;
+  background-image: url('../../images/tropical-leaf-silhouette-green.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__leaf {
+    position: absolute;
+    width: 55rem;
+    opacity: 0.2;
+    transform: rotate(180deg);
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title-box {
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background: #3a5d41;
+    border: 8px solid #f9f9f9;
+    border-radius: 16px;
+  }
+
+  &__title {
+    color: $highlight-yellow;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
   }
 }
 
-.project-button--1 {
-  background-color: black;
+.project {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__img {
+    border: 0.2rem solid;
+    border-radius: 8px;
+    border-color: $darker-green;
+    max-height: 20rem;
+    max-width: 16rem;
+
+    &-light {
+      border-color: $dark-green;
+    }
+  }
+
+  &__light {
+    & p,
+    h3 {
+      color: black;
+    }
+  }
+
+  &__button {
+    background-color: $darker-green;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 1rem 1rem auto auto;
+
+    &-light {
+      background-color: $dark-green;
+    }
+  }
 }

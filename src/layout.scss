@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Revalia&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Revalia&display=swap');
+@import '~bootstrap/scss/bootstrap';
 
 $background-green: #67a076;
 $dark-green: #3a5d41;
+$darker-green: #213425;
 $highlight-yellow: #ffc561;
 $off-white: #f9f9f9;
 $off-black: rgb(21, 21, 21);
@@ -13,7 +15,7 @@ $off-black: rgb(21, 21, 21);
   margin: 0;
   padding: 0;
   // font-weight: normal;
-  font-family: "Halant", serif;
+  font-family: 'Halant', serif;
   color: $off-white;
 }
 

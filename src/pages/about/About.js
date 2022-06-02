@@ -11,7 +11,7 @@ const About = () => {
       <img className="about__bird" src={birdSilouette} alt="background_image" />
       <img className="about__fern" src={fern} alt="background_image" />
       <article className="about__wrapper">
-        <h2 className="about__title">ABOUT</h2>
+        <h2 className="about__title">About</h2>
         <article className="about__content">
           <p className="about__text">
             Full-stack web developer, video editor and show performer. <br />
