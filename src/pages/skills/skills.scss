@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 140vh;
+  height: 120vh;
   position: relative;
   margin: -2rem auto -3rem;
 
@@ -47,13 +47,13 @@
   }
 
   &__vertical-dots {
-    height: 135vh;
+    height: 115vh;
     border-right: 15px dotted $off-white;
     z-index: 10;
   }
   &__birds {
     position: absolute;
-    height: 90vh;
+    height: 110vh;
     top: 0;
     margin-top: 15rem;
     opacity: 0.2;
