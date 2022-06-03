@@ -24,18 +24,16 @@ const Projects = () => {
       color: '#f9f9f9',
     },
     element1: {
-      background: '#3a5d41',
+      background: 'rgba(58, 93, 65, 0.7)',
       border: '8px solid #f9f9f9',
       borderRadius: '16px',
       boxShadow: 'none',
-      opacity: '0.8',
     },
     element2: {
-      background: '#e9edca',
+      background: 'rgba(233, 237, 202, 0.7)',
       border: '8px solid #3a5d41',
       borderRadius: '16px',
       boxShadow: 'none',
-      opacity: '0.8',
     },
   };
   return (

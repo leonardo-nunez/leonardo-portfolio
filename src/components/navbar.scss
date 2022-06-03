@@ -1,3 +1,23 @@
-.navbar {
-  position: absolute;
+.nav {
+  position: fixed;
+  top: -1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  &__ul {
+    display: flex;
+    padding: 1rem 0.5rem 0;
+    background-color: $background-green-transparent;
+    list-style-type: none;
+    border: 5px solid $off-white;
+    border-radius: 15px;
+  }
+
+  &__li {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  &__li:hover {
+    cursor: pointer;
+  }
 }
