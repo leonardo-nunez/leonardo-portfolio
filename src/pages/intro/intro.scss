@@ -58,3 +58,18 @@
   border-left: 15px dotted $off-white;
   height: 22.5rem;
 }
+
+@media only screen and (max-width: 992px) {
+  .intro {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__wrapper {
+      margin-top: 30vh;
+    }
+  }
+}
