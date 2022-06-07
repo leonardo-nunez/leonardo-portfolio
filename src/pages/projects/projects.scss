@@ -39,6 +39,10 @@
     justify-content: space-around;
   }
 
+  &__text {
+    max-width: 10rem;
+  }
+
   &__img {
     border: 0.2rem solid;
     border-radius: 8px;
