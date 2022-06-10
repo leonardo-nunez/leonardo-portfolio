@@ -68,9 +68,22 @@
     }
     &__text {
       text-align: center;
+      h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
     }
     &__wrapper {
-      margin-top: 30vh;
+      margin-top: 15vh;
     }
+  }
+  .vertical-dots {
+    margin-top: -1.3rem;
+    border-left: 15px dotted $off-white;
+    height: 22.5rem;
   }
 }

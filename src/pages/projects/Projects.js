@@ -1,13 +1,8 @@
 import React from 'react';
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import Button from 'react-bootstrap/Button';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import LaptopIcon from '@mui/icons-material/Laptop';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PetsIcon from '@mui/icons-material/Pets';
 
