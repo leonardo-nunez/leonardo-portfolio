@@ -47,9 +47,18 @@
   }
 
   &__vertical-dots {
-    height: 115vh;
-    border-right: 15px dotted $off-white;
+    &--middle {
+      border-right: 15px dotted $off-white;
+      height: 115vh;
+    }
+    &--top {
+      visibility: hidden;
+    }
+    &--bttm {
+      visibility: hidden;
+    }
   }
+
   &__birds {
     position: absolute;
     height: 110vh;
@@ -64,57 +73,73 @@
   .skills {
     height: auto;
     margin: auto;
+    flex-direction: column;
 
     &__header-wrapper {
-      width: 30vw;
+      width: auto;
+      margin-top: 1rem;
     }
 
     &__box-wrapper {
-      width: 30vw;
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
     }
 
     &__header {
-      display: flex;
-      align-items: center;
-      flex-direction: row-reverse;
-      margin-right: 4vw;
+      margin-right: auto;
 
       h1 {
-        text-align: center;
-        font-weight: 600;
-        font-size: 5rem;
-        color: $highlight-yellow;
+        font-size: 3rem;
       }
     }
 
     &__box {
-      background: #e9edca;
-      opacity: 0.8;
-      border: 12px solid $dark-green;
-      border-radius: 18px;
-      padding: 1rem;
-      margin: 0.5rem auto 0.5rem 4vw;
+      border: 8px solid $dark-green;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      width: 37.7vw;
       h3 {
         color: black;
         font-size: 1.5rem;
       }
       p {
         color: black;
-        font-size: 1.2rem;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+      }
+      &--general {
+        margin-right: 0.25rem;
+      }
+      &--backend {
+        margin-left: 0.25rem;
+      }
+      &--frontend {
+        width: auto;
+        margin: 0 0.5rem 0.25rem;
+      }
+      &--tools {
+        width: auto;
+        margin: 0.25rem 0.5rem 0;
       }
     }
 
     &__vertical-dots {
-      height: 115vh;
-      border-right: 15px dotted $off-white;
-    }
-    &__birds {
-      position: absolute;
-      height: 110vh;
-      top: 0;
-      margin-top: 15rem;
-      opacity: 0.2;
-      z-index: -1;
+      &--middle {
+        height: 6vh;
+        margin-bottom: 0.5rem;
+      }
+      &--top {
+        border-right: 15px dotted $off-white;
+        height: 20vh;
+        visibility: visible;
+      }
+      &--bttm {
+        border-right: 15px dotted $off-white;
+        height: 20vh;
+        visibility: visible;
+        margin-top: 0.5rem;
+      }
     }
   }
 }

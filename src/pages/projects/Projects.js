@@ -19,6 +19,7 @@ const Projects = () => {
       <div className="projects__title-box">
         <h2 className="projects__title">Projects</h2>
       </div>
+      <div className="projects__vertical-dots" />
       <VerticalTimeline lineColor={''}>
         <Project
           background={'dark'}
@@ -57,6 +58,7 @@ const Projects = () => {
           }
         />
       </VerticalTimeline>
+      <div className="projects__vertical-dots" />
     </section>
   );
 };

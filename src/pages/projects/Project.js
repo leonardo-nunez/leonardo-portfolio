@@ -40,21 +40,30 @@ const Project = (props) => {
         <div className="project__text">
           <h3 className="project__title">{props.title}</h3>
           <p>{props.text}</p>
-          <a href={props.url} target="_blank" rel="noreferrer">
-            <Button className="project__button" variant="success">
-              {<GitHubIcon />} GitHub
-            </Button>
-          </a>
-          {props.demo && (
-            <a href={props.demoLink} target="_blank" rel="noreferrer">
+          <div className="project__buttons-wrapper">
+            <a href={props.url} target="_blank" rel="noreferrer">
               <Button
-                className="project__button project__button-light"
+                className={
+                  props.background === 'light'
+                    ? 'project__button project__button-light project__button--github'
+                    : 'project__button'
+                }
                 variant="success"
               >
-                {<LaptopIcon />} Demo
+                {<GitHubIcon />} GitHub
               </Button>
             </a>
-          )}
+            {props.demo && (
+              <a href={props.demoLink} target="_blank" rel="noreferrer">
+                <Button
+                  className="project__button project__button-light project__button-demo"
+                  variant="success"
+                >
+                  {<LaptopIcon />} Demo
+                </Button>
+              </a>
+            )}
+          </div>
         </div>
         <img className={'project__img'} src={props.img} alt="projImage" />
       </div>

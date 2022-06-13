@@ -74,3 +74,96 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+
+    &__title-box {
+      margin: 0.5rem auto;
+    }
+
+    &__title {
+      font-size: 3rem;
+      margin: 0;
+      line-height: 1;
+    }
+    &__vertical-dots {
+      height: 6vh;
+      border-right: 15px dotted $off-white;
+    }
+  }
+
+  .vertical-timeline-element-content {
+    padding-bottom: 0 !important;
+  }
+
+  .project {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      max-width: auto;
+      text-align: center;
+      margin: 0 !important;
+      h3 {
+        font-size: 1.5rem !important;
+      }
+      p {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+    }
+
+    &__img {
+      border: 0.2rem solid;
+      border-radius: 8px;
+      border-color: $darker-green;
+      max-height: 100vh;
+      max-width: 65vw;
+
+      &-light {
+        border-color: $dark-green;
+      }
+    }
+
+    &__light {
+      & p,
+      h3 {
+        color: black;
+      }
+    }
+
+    &__buttons-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__button {
+      background-color: $darker-green;
+      padding: 0.3rem;
+      border-radius: 5px;
+      border: 0;
+      width: 25vw;
+      margin: 0 auto 0.5rem;
+
+      &-light {
+        background-color: $dark-green;
+      }
+      &--github {
+        margin-right: 0.5rem;
+      }
+      &--demo {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .vertical-timeline {
+    padding: 0.5rem 0 !important;
+  }
+}
