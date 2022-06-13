@@ -1,5 +1,3 @@
-import contactBg from '../../images/contact-bg.png';
-
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -31,7 +29,6 @@ const Contact = () => {
           <LinkedInIcon className="contact__icon" style={{ fill: 'black' }} />
         </a>
       </div>
-      <img className="contact__bg" src={contactBg} alt="bg" />
     </section>
   );
 };

@@ -6,6 +6,11 @@
   height: 120vh;
   position: relative;
   margin: -2rem auto -3rem;
+  z-index: -1;
+
+  background-image: url('../../images/bird-silhouette-green.png');
+  background-repeat: no-repeat;
+  background-position: 0vw 0;
 
   &__header-wrapper {
     width: 30vw;

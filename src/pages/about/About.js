@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CATS from './images/CATS.jpg';
 import Circus from './images/Circus.jpg';
 import fern from '../../images/fern.png';

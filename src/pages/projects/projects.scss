@@ -97,8 +97,23 @@
     }
   }
 
-  .vertical-timeline-element-content {
-    padding-bottom: 0 !important;
+  .vertical-timeline {
+    margin-top: -10px !important;
+    width: auto !important;
+
+    &-element-content {
+      padding-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-top: 72px !important;
+    }
+
+    &-element-icon {
+      top: -55px !important;
+      left: 50% !important;
+      transform: translate(-50%, 0) !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
   }
 
   .project {
@@ -125,7 +140,7 @@
       border-radius: 8px;
       border-color: $darker-green;
       max-height: 100vh;
-      max-width: 65vw;
+      max-width: 57vw;
 
       &-light {
         border-color: $dark-green;

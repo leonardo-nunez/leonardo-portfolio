@@ -1,7 +1,3 @@
-import React from 'react';
-
-import birdSilouette from '../../images/bird-silhouette.png';
-
 const Skills = () => {
   return (
     <>
@@ -40,11 +36,6 @@ const Skills = () => {
           </article>
         </div>
         <div className="skills__vertical-dots--bttm" />
-        <img
-          className="skills__birds"
-          src={birdSilouette}
-          alt="background_image"
-        />
       </section>
     </>
   );
