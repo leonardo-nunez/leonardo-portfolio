@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   margin: 0.5rem auto 1rem;
+  width: 100vw;
+
+  background-image: url('../../images/fern.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50vw 0;
 
   &__wrapper {
     display: flex;
