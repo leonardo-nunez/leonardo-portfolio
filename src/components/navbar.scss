@@ -1,5 +1,3 @@
-$nav-color: #ffffff;
-$nav-bg-active: rgba(58, 93, 65, 0.9);
 $duration: 300ms;
 $ease: ease-in-out;
 
@@ -62,7 +60,7 @@ $ease: ease-in-out;
       font-size: 1.3rem;
       text-transform: uppercase;
       text-decoration: none;
-      color: $nav-color;
+      color: $off-white;
       opacity: 1;
       transition: opacity 300ms $ease;
     }
@@ -76,48 +74,48 @@ $ease: ease-in-out;
       top: 16px;
       z-index: 200;
     }
+
+    &__icon {
+      display: inline-block;
+      position: relative;
+      width: 40px;
+      height: 8px;
+      background-color: $off-white;
+      transition-property: background-color, transform;
+      transition-duration: $duration;
+      border-radius: 5px;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 8px;
+        position: absolute;
+        background: $off-white;
+        transition-property: margin, transform;
+        transition-duration: $duration;
+        border-radius: 5px;
+      }
+
+      &:before {
+        margin-top: -13px;
+      }
+
+      &:after {
+        margin-top: 13px;
+      }
+    }
   }
 
   .nav--active .nav {
     opacity: 1;
-    background-color: $nav-bg-active;
+    background-color: rgba(58, 93, 65, 0.9);
     border-bottom: 10px solid $off-white;
     border-radius: 15px;
   }
   .nav--active .nav__trigger {
     opacity: 0.5;
-  }
-
-  .nav__icon {
-    display: inline-block;
-    position: relative;
-    width: 40px;
-    height: 8px;
-    background-color: $nav-color;
-    transition-property: background-color, transform;
-    transition-duration: $duration;
-    border-radius: 5px;
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      width: 40px;
-      height: 8px;
-      position: absolute;
-      background: $nav-color;
-      transition-property: margin, transform;
-      transition-duration: $duration;
-      border-radius: 5px;
-    }
-
-    &:before {
-      margin-top: -13px;
-    }
-
-    &:after {
-      margin-top: 13px;
-    }
   }
 
   .screen {
