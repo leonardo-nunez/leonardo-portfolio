@@ -42,6 +42,8 @@ const Projects = () => {
         />
         <Project
           background={'dark'}
+          demo={true}
+          demoLink={'https://leonardo-portfolio.herokuapp.com/'}
           icon={<LaptopIcon />}
           img={portfolio}
           url={'https://github.com/leonardo-nunez/leonardo-portfolio'}
