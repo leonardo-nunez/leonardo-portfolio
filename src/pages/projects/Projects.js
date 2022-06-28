@@ -53,7 +53,7 @@ const Projects = () => {
           background={'light'}
           icon={<PetsIcon />}
           img={puppies}
-          url={'https://github.com/leonardo-nunez/puppies-fullstack-app'}
+          url={'https://github.com/davlet61/puppies-fullstack-app'}
           title={'Puppies'}
           text={
             'A fullstack application with server and client displaying puppy information built with typescript'
