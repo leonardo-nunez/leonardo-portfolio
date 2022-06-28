@@ -22,17 +22,17 @@ const Projects = () => {
       <VerticalTimeline lineColor={''}>
         <Project
           background={'dark'}
-          demo={true}
           demoLink={'https://cin-cin.herokuapp.com/'}
           icon={<LocalBarIcon />}
           img={cincin}
           url={'https://github.com/leonardo-nunez/cin-cin'}
           title={'CIN CIN'}
-          text={'Cocktail recipe app 24 hour project @</SALT>'}
+          text={
+            'A simple but good looking cocktail recipe app made during "Hackday", a 24 hour project at </SALT>'
+          }
         />
         <Project
           background={'light'}
-          demo={true}
           demoLink={'https://quiz-the-survivors.herokuapp.com/'}
           icon={<MusicNoteIcon />}
           img={musically}
@@ -42,7 +42,6 @@ const Projects = () => {
         />
         <Project
           background={'dark'}
-          demo={true}
           demoLink={'https://leonardo-portfolio.herokuapp.com/'}
           icon={<LaptopIcon />}
           img={portfolio}

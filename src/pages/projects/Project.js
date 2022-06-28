@@ -53,7 +53,7 @@ const Project = (props) => {
                 {<GitHubIcon />} GitHub
               </Button>
             </a>
-            {props.demo && (
+            {props.demoLink && (
               <a href={props.demoLink} target="_blank" rel="noreferrer">
                 <Button
                   className="project__button project__button-light project__button-demo"
