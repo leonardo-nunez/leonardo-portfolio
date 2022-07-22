@@ -24,7 +24,9 @@ const Skills = () => {
           </article>
           <article className="skills__box skills__box--frontend">
             <h3>Frontend</h3>
-            <p>React, React Native, Angular, Redux, HTML, CSS, Figma, UX</p>
+            <p>
+              React, React Native, NextJS, Angular, Redux, HTML, CSS, Figma, UX
+            </p>
           </article>
           <article className="skills__box skills__box--tools">
             <h3>Tools and technologies</h3>
