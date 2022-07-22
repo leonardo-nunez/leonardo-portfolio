@@ -1,14 +1,17 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PetsIcon from '@mui/icons-material/Pets';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import cincin from './images/cincin.jpg';
 import musically from './images/musically.jpg';
 import portfolio from './images/portfolio.jpg';
 import puppies from './images/puppies.jpg';
+import shopping from './images/nextshopping.jpg';
 
 import Project from './Project';
 
@@ -58,6 +61,15 @@ const Projects = () => {
           text={
             'A fullstack application with server and client displaying puppy information built with typescript'
           }
+        />
+        <Project
+          background={'dark'}
+          demoLink={'https://next-shopping.herokuapp.com/'}
+          icon={<ShoppingCartIcon />}
+          img={shopping}
+          url={'https://github.com/leonardo-nunez/next-shopping'}
+          title={'Next Shopping'}
+          text={'A product catalogue app done with NextJS and Scss'}
         />
       </VerticalTimeline>
       <div className="projects__vertical-dots" />
