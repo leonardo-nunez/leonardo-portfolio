@@ -25,7 +25,7 @@ const Projects = () => {
       <VerticalTimeline lineColor={''}>
         <Project
           background={'dark'}
-          demoLink={'https://cin-cin.herokuapp.com/'}
+          // demoLink={'https://cin-cin.herokuapp.com/'}
           icon={<LocalBarIcon />}
           img={cincin}
           url={'https://github.com/leonardo-nunez/cin-cin'}
