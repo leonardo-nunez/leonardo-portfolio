@@ -65,7 +65,11 @@ const Project = (props) => {
             )}
           </div>
         </div>
-        <img className={'project__img'} src={props.img} alt="projImage" />
+        <img
+          className="project__img"
+          src={`/project_images/${props.img}`}
+          alt="projImage"
+        />
       </div>
     </VerticalTimelineElement>
   );
