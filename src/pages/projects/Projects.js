@@ -1,17 +1,12 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import LocalBarIcon from '@mui/icons-material/LocalBar';
-import LaptopIcon from '@mui/icons-material/Laptop';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import PetsIcon from '@mui/icons-material/Pets';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
 import cincin from './images/cincin.jpg';
 import musically from './images/musically.jpg';
 import portfolio from './images/portfolio.jpg';
 import puppies from './images/puppies.jpg';
 import shopping from './images/nextshopping.jpg';
+import chatUpNow from './images/ChatUpNow.png';
 
 import Project from './Project';
 
@@ -26,7 +21,7 @@ const Projects = () => {
         <Project
           background={'dark'}
           // demoLink={'https://cin-cin.herokuapp.com/'}
-          icon={<LocalBarIcon />}
+          icon="local_bar"
           img={cincin}
           url={'https://github.com/leonardo-nunez/cin-cin'}
           title={'CIN CIN'}
@@ -37,7 +32,7 @@ const Projects = () => {
         <Project
           background={'light'}
           demoLink={'https://quiz-the-survivors.herokuapp.com/'}
-          icon={<MusicNoteIcon />}
+          icon="music_note"
           img={musically}
           url={'https://github.com/martalewan/Music-quiz'}
           title={'Musically'}
@@ -45,16 +40,25 @@ const Projects = () => {
         />
         <Project
           background={'dark'}
+          demoLink={'https://fullstack-chat-leo.herokuapp.com/'}
+          icon="sms"
+          img={chatUpNow}
+          url={'https://github.com/leonardo-nunez/fullstack-chat-leo'}
+          title={'ChatUpNow'}
+          text={'A fullstack chat app'}
+        />
+        <Project
+          background={'light'}
           demoLink={'https://leonardo-portfolio.herokuapp.com/'}
-          icon={<LaptopIcon />}
+          icon="laptop_mac"
           img={portfolio}
           url={'https://github.com/leonardo-nunez/leonardo-portfolio'}
           title={'Portfolio'}
           text={'Portfolio page made with React'}
         />
         <Project
-          background={'light'}
-          icon={<PetsIcon />}
+          background={'dark'}
+          icon="pets"
           img={puppies}
           url={'https://github.com/davlet61/puppies-fullstack-app'}
           title={'Puppies'}
@@ -63,9 +67,9 @@ const Projects = () => {
           }
         />
         <Project
-          background={'dark'}
+          background={'light'}
           demoLink={'https://next-shopping.herokuapp.com/'}
-          icon={<ShoppingCartIcon />}
+          icon="shopping_cart"
           img={shopping}
           url={'https://github.com/leonardo-nunez/next-shopping'}
           title={'Next Shopping'}

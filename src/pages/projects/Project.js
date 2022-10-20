@@ -34,7 +34,7 @@ const Project = (props) => {
           : { borderRight: '8px solid  #3a5d41' }
       }
       iconStyle={styles.icon}
-      icon={props.icon}
+      icon={<span class="material-symbols-outlined">{props.icon}</span>}
     >
       <div className="project__wrapper">
         <div className="project__text">

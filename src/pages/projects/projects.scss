@@ -75,6 +75,12 @@
   }
 }
 
+.vertical-timeline-element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 992px) {
   .projects {
     display: flex;
