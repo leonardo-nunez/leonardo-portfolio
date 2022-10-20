@@ -74,11 +74,15 @@ const Project = ({ background, demoLink, icon, img, url, title, text }) => {
             )}
           </div>
         </div>
-        <img
-          className="project__img"
-          src={`/project_images/${img}`}
-          alt="projImage"
-        />
+        <a href={demoLink ? demoLink : url} target="_blank" rel="noreferrer">
+          <button className="project__img-btn">
+            <img
+              className="project__img"
+              src={`/project_images/${img}`}
+              alt="projImage"
+            />
+          </button>
+        </a>
       </div>
     </VerticalTimelineElement>
   );

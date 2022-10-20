@@ -44,15 +44,23 @@
   }
 
   &__img {
-    border: 0.2rem solid;
-    border-radius: 8px;
-    border-color: $darker-green;
     max-height: 20rem;
     max-width: 16rem;
+    border-radius: 3px;
 
     &-light {
       border-color: $dark-green;
     }
+  }
+
+  &__img-btn {
+    border: 0.3rem solid;
+    border-radius: 8px;
+    border-color: $darker-green;
+  }
+
+  &__img-btn:hover {
+    border-color: #198754;
   }
 
   &__light {
@@ -78,6 +86,7 @@
       margin: 1rem 1rem 0 0;
     }
   }
+
   &__link {
     text-decoration: none;
   }
@@ -150,9 +159,6 @@
     }
 
     &__img {
-      border: 0.2rem solid;
-      border-radius: 8px;
-      border-color: $darker-green;
       max-height: 100vh;
       max-width: 57vw;
 
