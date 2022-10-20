@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
-const Project = (props) => {
+const Project = ({ background, demoLink, icon, img, url, title, text }) => {
   const styles = {
     icon: {
       border: '3px solid #f9f9f9',
@@ -25,25 +25,25 @@ const Project = (props) => {
   };
   return (
     <VerticalTimelineElement
-      className={`project project__${props.background}`}
-      contentStyle={props.background === 'dark' ? styles.dark : styles.light}
+      className={`project project__${background}`}
+      contentStyle={background === 'dark' ? styles.dark : styles.light}
       contentArrowStyle={
-        props.background === 'dark'
+        background === 'dark'
           ? { borderRight: '8px solid  #f9f9f9' }
           : { borderRight: '8px solid  #3a5d41' }
       }
       iconStyle={styles.icon}
-      icon={<span class="material-symbols-outlined">{props.icon}</span>}
+      icon={<span class="material-symbols-outlined">{icon}</span>}
     >
       <div className="project__wrapper">
         <div className="project__text">
-          <h3 className="project__title">{props.title}</h3>
-          <p>{props.text}</p>
+          <h3 className="project__title">{title}</h3>
+          <p>{text}</p>
           <div className="project__buttons-wrapper">
-            <a href={props.url} target="_blank" rel="noreferrer">
+            <a href={url} target="_blank" rel="noreferrer">
               <Button
                 className={
-                  props.background === 'light'
+                  background === 'light'
                     ? 'project__button project__button-light project__button--github'
                     : 'project__button'
                 }
@@ -52,16 +52,16 @@ const Project = (props) => {
                 {<GitHubIcon />} GitHub
               </Button>
             </a>
-            {props.demoLink && (
+            {demoLink && (
               <a
                 className="project__link"
-                href={props.demoLink}
+                href={demoLink}
                 target="_blank"
                 rel="noreferrer"
               >
                 <Button
                   className={
-                    props.background === 'light'
+                    background === 'light'
                       ? 'project__button project__button-demo project__button-light'
                       : 'project__button project__button-demo'
                   }
@@ -76,7 +76,7 @@ const Project = (props) => {
         </div>
         <img
           className="project__img"
-          src={`/project_images/${props.img}`}
+          src={`/project_images/${img}`}
           alt="projImage"
         />
       </div>
