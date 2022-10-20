@@ -72,6 +72,14 @@
     &-light {
       background-color: $dark-green;
     }
+    &-demo {
+      display: flex;
+      align-items: center;
+      margin: 1rem 1rem 0 0;
+    }
+  }
+  &__link {
+    text-decoration: none;
   }
 }
 
@@ -166,6 +174,8 @@
     }
 
     &__button {
+      display: flex;
+      align-items: center;
       background-color: $darker-green;
       padding: 0.3rem;
       border-radius: 5px;

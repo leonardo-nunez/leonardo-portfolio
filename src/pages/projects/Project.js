@@ -54,12 +54,22 @@ const Project = (props) => {
               </Button>
             </a>
             {props.demoLink && (
-              <a href={props.demoLink} target="_blank" rel="noreferrer">
+              <a
+                className="project__link"
+                href={props.demoLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Button
-                  className="project__button project__button-light project__button-demo"
+                  className={
+                    props.background === 'light'
+                      ? 'project__button project__button-demo project__button-light'
+                      : 'project__button project__button-demo'
+                  }
                   variant="success"
                 >
-                  {<LaptopIcon />} Demo
+                  <span class="material-symbols-outlined">laptop_mac</span>
+                  &nbsp;Demo
                 </Button>
               </a>
             )}
