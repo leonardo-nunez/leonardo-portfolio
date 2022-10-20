@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import LaptopIcon from '@mui/icons-material/Laptop';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 

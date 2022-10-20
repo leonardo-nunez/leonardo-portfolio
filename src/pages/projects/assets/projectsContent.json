@@ -1,0 +1,52 @@
+[
+  {
+    "demoLink": "https://cin-cin.herokuapp.com/",
+    "icon": "local_bar",
+    "img": "cincin.jpg",
+    "url": "https://github.com/leonardo-nunez/cin-cin",
+    "title": "CIN CIN",
+    "text": "A simple but good looking cocktail recipe app made during 'Hackday', a 24 hour project at </SALT>"
+  },
+  {
+    "demoLink": "https://quiz-the-survivors.herokuapp.com/",
+    "icon": "music_note",
+    "img": "musically.jpg",
+    "url": "https://github.com/martalewan/Music-quiz",
+    "title": "Musically",
+    "text": "Music Quiz app, Final project @</SALT>"
+  },
+  {
+    "demoLink": "https://fullstack-chat-leo.herokuapp.com/",
+    "icon": "sms",
+    "img": "chatUpNow.png",
+    "url": "https://github.com/leonardo-nunez/fullstack-chat-leo",
+    "title": "ChatUpNow",
+    "text": "A fullstack chat app"
+  },
+
+  {
+    "demoLink": "https://leonardo-portfolio.herokuapp.com/",
+    "icon": "laptop_mac",
+    "img": "portfolio.jpg",
+    "url": "https://github.com/leonardo-nunez/leonardo-portfolio",
+    "title": "Portfolio",
+    "text": "Portfolio page made with React"
+  },
+
+  {
+    "icon": "pets",
+    "img": "puppies.jpg",
+    "url": "https://github.com/davlet61/puppies-fullstack-app",
+    "title": "Puppies",
+    "text": "A fullstack application with server and client displaying puppy information built with typescript"
+  },
+
+  {
+    "demoLink": "https://next-shopping.herokuapp.com/",
+    "icon": "shopping_cart",
+    "img": "nextshopping.jpg",
+    "url": "https://github.com/leonardo-nunez/next-shopping",
+    "title": "Next Shopping",
+    "text": "A product catalogue app done with NextJS and Scss"
+  }
+]
