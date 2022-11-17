@@ -9,15 +9,18 @@ const About = () => {
         <article className='about__content'>
           <div className='about__text'>
             <div>
-              I'm a full-stack web developer, video editor and show performer.{" "}
+              I'm a full-stack web developer, video editor and show performer.
+              <br />
               <br />
               In 2021 I decided to make a switch from the stage into coding. I
               applied to
               <span className='highlighted'> &lt;/SALT&gt;</span> and was one of
               the 40 candidates that got in from over 1000 applicants.
+              <br />
               <br />I love problem solving, being creative and working in teams.
               <br />
               I speak English, Swedish and Spanish fluently.
+              <br />
               <br />
               My full CV can be found{" "}
               <a
