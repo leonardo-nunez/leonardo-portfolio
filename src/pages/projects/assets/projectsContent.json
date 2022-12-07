@@ -16,7 +16,7 @@
     "text": "Music Quiz app, Final project @</SALT>"
   },
   {
-    "demoLink": "https://fullstack-chat-leo.herokuapp.com/",
+    "demoLink": "https://chatupnow.onrender.com/",
     "icon": "sms",
     "img": "chatUpNow.jpg",
     "url": "https://github.com/leonardo-nunez/fullstack-chat-leo",
@@ -25,7 +25,7 @@
   },
 
   {
-    "demoLink": "https://leonardo-portfolio.herokuapp.com/",
+    "demoLink": "https://leonardo-portfolio.onrender.com/",
     "icon": "laptop_mac",
     "img": "portfolio.jpg",
     "url": "https://github.com/leonardo-nunez/leonardo-portfolio",
