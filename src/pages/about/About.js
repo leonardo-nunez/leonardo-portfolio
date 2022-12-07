@@ -1,5 +1,5 @@
-import CATS from "./images/CATS.jpg";
-import Circus from "./images/Circus.jpg";
+import CATS from './images/CATS.jpg';
+import Circus from './images/Circus.jpg';
 
 const About = () => {
   return (
@@ -22,10 +22,10 @@ const About = () => {
               I speak English, Swedish and Spanish fluently.
               <br />
               <br />
-              My full CV can be found{" "}
+              My full CV can be found{' '}
               <a
                 className='about__cv-link'
-                href='/assets/files/cv.pdf'
+                href='https://docs.google.com/document/d/1z45C-9wZqsu9XmbkVCq7ATprNzkf9Og7IZH2mR-5ouY/edit?usp=sharing'
               >
                 here
               </a>
