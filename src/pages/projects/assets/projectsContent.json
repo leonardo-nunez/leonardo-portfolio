@@ -1,6 +1,5 @@
 [
   {
-    "demoLink": "https://cin-cin.herokuapp.com/",
     "icon": "local_bar",
     "img": "cincin.jpg",
     "url": "https://github.com/leonardo-nunez/cin-cin",
@@ -8,7 +7,6 @@
     "text": "A simple but good looking cocktail recipe app made during 'Hackday', a 24 hour project at </SALT>"
   },
   {
-    "demoLink": "https://quiz-the-survivors.herokuapp.com/",
     "icon": "music_note",
     "img": "musically.jpg",
     "url": "https://github.com/martalewan/Music-quiz",
@@ -42,7 +40,6 @@
   },
 
   {
-    "demoLink": "https://next-shopping.herokuapp.com/",
     "icon": "shopping_cart",
     "img": "nextshopping.jpg",
     "url": "https://github.com/leonardo-nunez/next-shopping",
