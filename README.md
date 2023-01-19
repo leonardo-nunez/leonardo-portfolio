@@ -2,7 +2,7 @@
 
 Portfolio site.
 
-Information on who I am, and some of the projects I have worked on.
+Information on who I am, my CV and some of the projects I have worked on.
 
 ## Tech Stack
 
