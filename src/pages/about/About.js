@@ -25,7 +25,7 @@ const About = () => {
               My full CV can be found{' '}
               <a
                 className='about__cv-link'
-                href='https://docs.google.com/document/d/1z45C-9wZqsu9XmbkVCq7ATprNzkf9Og7IZH2mR-5ouY/edit?usp=sharing'
+                href='https://docs.google.com/document/d/14PMa-V1zyQswrRMAdSS6BcvJCsW-xFkRu-NkL-JPOZI/edit?usp=sharing'
               >
                 here
               </a>
